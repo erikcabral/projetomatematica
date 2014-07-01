@@ -2,7 +2,7 @@ Papirapp::Application.routes.draw do
 
 #Contatos
   resources :contacts
-  get "/contato" => "contacts#new"
+  get "/contato" => "contacts#new", as: "contato"
 
 #Páginas estáticas
   get "/sobre" => "static_pages#sobre"

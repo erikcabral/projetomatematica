@@ -1,8 +1,15 @@
+<% flash.each do |name, msg| %> 
+  <div class="alert alert-<%= name == :notice ? "success" : "error" %>" style="margin: 10px 20px 10px 20px">
+    <a class="close" data-dismiss="alert">x</a>
+    <%= msg %>    
+  </div>        
+<% end %> 
+
 <div class="content contact">
   <div class="container">
     <h3 class='color'>Contato</h3>
     <p class="big grey">Para solicitar aulas, preencha o formulário de contato abaixo. Se preferir, entre em contato conosco através do email ou dos telefones fornecidos.</p>
-    <hr />            
+    <hr />           
     <div class="row"> 
       <div class="col-md-6 col-sm-6">
         <!-- Contact form -->
