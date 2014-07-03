@@ -35,8 +35,8 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: papirapp_production
+  database: rails
   pool: 5
-  username: root
-  password: "ime6012"
+  username: rails
+  password: "mnHUrkPZ4j"
   socket: /var/run/mysqld/mysqld.sock
