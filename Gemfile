@@ -42,8 +42,7 @@ gem 'unicorn'
 # gem 'capistrano', group: :development
 
 gem 'capistrano'
-gem 'rvm-capistrano'
-
+gem 'net-ssh'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
