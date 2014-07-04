@@ -27,10 +27,9 @@ Papirapp::Application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = true
+  config.assets.compile = false
 
-  config.assets.precompile += ['application.js']
-  config.assets.precompile += ['bootstrap.js']
+  config.assets.precompile += ["bootstrap.js", "blue.css", "bootstrap.css", "bootstrap.min.css", "flexslider.css", "font-awesome.css.erb", "lblue.css", "prettyPhoto.css", "slider.css", "style.css" ]
   config.assets.precompile += ['bootstrap.min.js']
   config.assets.precompile += ['custom.js']
   config.assets.precompile += ['cycle.js']
