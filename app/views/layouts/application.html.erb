@@ -4,7 +4,6 @@
   <title>Projeto Matemática | Aulas particulares com os melhores professores</title>
   <%= stylesheet_link_tag "application", media: "all" %>
   <%= favicon_link_tag 'favicon/favicon.png' %>
-  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -77,14 +76,10 @@
   <div class="clearfix"></div>
   </div>
 </footer> 
-
+<%= javascript_include_tag "application", "jquery.cslider", "jquery.prettyPhoto", "jquery.isotope", "cycle" %>
 <!-- JS -->
-<script src="assets/jquery.isotope.js"></script> <!-- Isotope for gallery -->
-<script src="assets/jquery.prettyPhoto.js"></script> <!-- prettyPhoto for images -->
-<script src="assets/jquery.cslider.js"></script> <!-- Parallax slider -->
 <script src="assets/modernizr.custom.28468.js"></script>
 <script src="assets/filter.js"></script> <!-- Filter for support page -->
-<script src="assets/cycle.js"></script> <!-- Cycle slider -->
 <script src="assets/jquery.flexslider-min.js"></script> <!-- Flex slider -->
 <script src="assets/easing.js"></script> <!-- Easing -->
 <script src="assets/custom.js"></script>

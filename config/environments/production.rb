@@ -29,19 +29,7 @@ Papirapp::Application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
-  config.assets.precompile += ["bootstrap.js", "blue.css", "bootstrap.css", "bootstrap.min.css", "flexslider.css", "font-awesome.css.erb", "lblue.css", "prettyPhoto.css", "slider.css", "style.css" ]
-  config.assets.precompile += ['bootstrap.min.js']
-  config.assets.precompile += ['custom.js']
-  config.assets.precompile += ['cycle.js']
-  config.assets.precompile += ['easing.js']
-  config.assets.precompile += ['filter.js']
-  config.assets.precompile += ['html5shim.js']
-  config.assets.precompile += ['jquery.cslider.js']
-  config.assets.precompile += ['jquery.flexslider-min.js']
-  config.assets.precompile += ['jquery.isotope.js']
-  config.assets.precompile += ['jquery.js']
-  config.assets.precompile += ['jquery.prettyPhoto.js']
-  config.assets.precompile += ['modernizr.custom.28468.js']
+  config.assets.precompile += ["blue.css", "flexslider.css", "font-awesome.css.erb", "lblue.css", "prettyPhoto.css", "slider.css", "style.css", "bootstrap.min.js", "custom.js", "easing.js", "filter.js", "html5shim.js", "jquery.flexslider-min.js", "modernizr.custom.28468.js"]
 
   # Generate digests for assets URLs.
   config.assets.digest = true
