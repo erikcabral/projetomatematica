@@ -29,7 +29,7 @@ Papirapp::Application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
-  config.assets.precompile += ["blue.css", "flexslider.css", "font-awesome.css.erb", "lblue.css", "prettyPhoto.css", "slider.css", "style.css", "bootstrap.min.js", "custom.js", "easing.js", "filter.js", "html5shim.js", "jquery.flexslider-min.js", "modernizr.custom.28468.js"]
+  config.assets.precompile += ["blue.css", "flexslider.css", "font-awesome.css.erb", "lblue.css", "prettyPhoto.css", "slider.css", "style.css", "bootstrap.min.js", "custom.js", "html5shim.js"]
 
   # Generate digests for assets URLs.
   config.assets.digest = true
