@@ -30,6 +30,7 @@ Papirapp::Application.configure do
   config.assets.compile = false
 
   config.assets.precompile += ["blue.css", "flexslider.css", "font-awesome.css.erb", "lblue.css", "prettyPhoto.css", "slider.css", "style.css", "bootstrap.min.js", "html5shim.js"]
+  config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif]
 
   # Generate digests for assets URLs.
   config.assets.digest = true
