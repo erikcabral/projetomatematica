@@ -1,4 +1,7 @@
 Papirapp::Application.configure do
+  
+  ENV["MAIL_USERNAME"] = "menduina.006@gmail.com"  
+  ENV["MANDRILL_APIKEY"] = "Y4YVpqwH9FebUi3LYViH8w"  
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -80,4 +83,17 @@ Papirapp::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.action_mailer.default_url_options = { :host => 'projetomatematica.com.br' }
+
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.smtp_settings = {
+  address: "smtp.mandrillapp.com",
+  port: 587,
+  domain: "projetomatematica.com.br",
+  authentication: "plain",
+  enable_starttls_auto: true,
+  user_name: ENV["MAIL_USERNAME"],
+  password: ENV["MANDRILL_APIKEY"]
 end

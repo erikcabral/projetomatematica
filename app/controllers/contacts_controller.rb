@@ -26,6 +26,8 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
+      # Envio de Email de Contato
+      ContactMailer.contact_email(@contact).deliver
       flash[:notice] = 'Recebemos sua mensagem. Em breve lhe enviaremos uma resposta.'
       redirect_to action: "new"
     else

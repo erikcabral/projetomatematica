@@ -1,4 +1,7 @@
 Papirapp::Application.configure do
+
+  ENV["MAIL_USERNAME"] = "menduina.006@gmail.com"  
+  ENV["MANDRILL_APIKEY"] = "Y4YVpqwH9FebUi3LYViH8w"  
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -14,7 +17,7 @@ Papirapp::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -28,5 +31,18 @@ Papirapp::Application.configure do
   config.assets.debug = true
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.smtp_settings = {
+  address: "smtp.mandrillapp.com",
+  port: 587,
+  domain: "projetomatematica.com.br",
+  authentication: "plain",
+  enable_starttls_auto: true,
+  user_name: ENV["MAIL_USERNAME"],
+  password: ENV["MANDRILL_APIKEY"]
+}
+
 
 end
